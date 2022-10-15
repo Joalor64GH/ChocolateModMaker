@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<!-- NMML reference: https://gist.github.com/1763850 -->
 		
-	<!--The flixel preloader is not accurate in Chrome. You can use it regualary if you embed the swf into a html file, or you can set the actual size of your file manually at "Flxpreloader-onUpdate-bytesTotal"!-->
-  <app title="Enigma Mod Maker"
-    file="Enigma"
-    packageName="com.mastereric.enigmaengine"
-    package="com.mastereric.enigmaengine"
-    main="Main"
-    version="0.1.0"
-    company="mastereric"  />
+  <app title="Enigma Mod Maker" file="Enigma" packageName="com.mastereric.enigmaengine" package="com.mastereric.enigmaengine" main="Main" version="0.1.0" company="mastereric" />
+  
+  <!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
+		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
   <app preloader="flixel.system.FlxPreloader" />
 	
 	<!--The swf version should be at least 11.2 if you want to use the FLX_MOUSE_ADVANCED option-->
@@ -18,15 +13,7 @@
 	<!-- __________WINDOW SETTINGS__________ -->
 	
 	<!--These window settings apply to all targets-->
-  <window width="1280"
-          height="720"
-          fps="0"
-          background="#000000"
-          hardware="true"
-          orientation="landscape"
-          fullscreen="false"
-          resizable="true"
-          vsync="false" />
+  <window width="1280" height="720" fps="0" background="#000000" hardware="true" orientation="landscape" fullscreen="false" resizable="true" vsync="false" />
 	
 	<!--HTML5-specific-->
 	<window if="html5" resizable="false" />
@@ -39,13 +26,8 @@
 	
 	<!-- __________PATHS SETTINGS__________ -->
 	
-	<set name="no-custom-backend" />
-  <set name="BUILD_DIR"
-       value="export/debug"
-       if="debug" />
-  <set name="BUILD_DIR"
-       value="export/release"
-       unless="debug" />
+	<set name="BUILD_DIR" value="export/debug" if="debug" />
+  <set name="BUILD_DIR" value="export/release" unless="debug" />
 
   <classpath path="source" />
   <classpath path="engine/source/funkin" />
@@ -60,20 +42,12 @@
   <haxelib name="flixel-ui" />
   <haxelib name="haxeui-core" />
   <haxelib name="haxeui-flixel" />
-	<!-- A set of additional functions for working with strings. -->
 	<haxelib name="haxe-strings" />
-	<!-- A localization library. We'll start using this eventually for multiple language support. -->
 	<haxelib name="firetongue" />
-  <!-- A library for tolerant JSON parsing. Fewer bugs caused by typos means fewer issues on GitHub. -->
 	<haxelib name="tjson" />
 
-  <!--
-    Dependencies of Enigma Engine only. Not useful for the editor itself.
-    TODO: Make my data types and the rest of the engine more modular.
-  -->
   <haxelib name="polymod" />
   <haxelib name="actuate" />
-	
 	
 	<!-- __________HAXEDEFINES__________ -->
 	
