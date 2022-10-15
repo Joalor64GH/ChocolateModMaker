@@ -27,6 +27,7 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
+          haxelib install hxcpp > nul
           haxelib install lime
           haxelib install openfl
           haxelib install flixel
@@ -34,8 +35,11 @@ jobs:
           haxelib run lime setup
           haxelib install flixel-ui
           haxelib install flixel-addons
+          haxelib install hxWidgets
           haxelib install haxeui-core
           haxelib install haxeui-flixel
+          haxelib install haxeui-hxwidgets
+          haxelib install haxeui-rich-text
           haxelib install haxe-strings
           haxelib install firetongue
           haxelib git tjson https://github.com/MasterEric/TJSON
