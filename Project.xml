@@ -40,11 +40,8 @@
 	<haxelib name="flixel" />
   <haxelib name="flixel-addons" />
   <haxelib name="flixel-ui" />
-  <haxelib name="hxWidgets" />
   <haxelib name="haxeui-core" />
   <haxelib name="haxeui-flixel" />
-  <haxelib name="haxeui-hxwidgets" />
-  <haxelib name="haxeui-rich-text" />
 	<haxelib name="haxe-strings" />
 	<haxelib name="firetongue" />
 	<haxelib name="tjson" />

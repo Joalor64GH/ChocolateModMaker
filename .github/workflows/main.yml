@@ -1,4 +1,4 @@
- # This is a basic workflow to help you get started with Actions
+# This is a basic workflow to help you get started with Actions
 
 name: Build
 
@@ -22,24 +22,20 @@ jobs:
 
       - uses: krdlab/setup-haxe@master
         with:
-          haxe-version: 4.2.4
+          haxe-version: 4.2.3
       # Runs a set of commands using the runners shell
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > nul
-          haxelib install lime 8.0.0
-          haxelib install openfl 9.2.0
-          haxelib --never install flixel 4.11.0
+          haxelib install lime
+          haxelib install openfl
+          haxelib install flixel
           haxelib run lime setup flixel
           haxelib run lime setup
           haxelib install flixel-ui
           haxelib install flixel-addons
-          haxelib install hxWidgets
           haxelib install haxeui-core
           haxelib install haxeui-flixel
-          haxelib install haxeui-hxwidgets
-          haxelib install haxeui-rich-text
           haxelib install haxe-strings
           haxelib install firetongue
           haxelib git tjson https://github.com/MasterEric/TJSON
