@@ -20,7 +20,7 @@
  * MainWindow.hx
  * The primary view of the application.
  */
-package engima.modmaker.gui;
+package chocolate.modmaker.gui;
 
 import flixel.FlxG;
 import haxe.ui.containers.VBox;

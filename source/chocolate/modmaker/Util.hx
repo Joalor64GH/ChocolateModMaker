@@ -1,4 +1,4 @@
-package engima.modmaker;
+package chocolate.modmaker;
 
 class Util {
   public static function testPrint() {

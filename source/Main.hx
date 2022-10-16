@@ -22,8 +22,8 @@
  */
 package;
 
-import engima.modmaker.Util;
-import engima.modmaker.gui.MainWindow;
+import chocolate.modmaker.Util;
+import chocolate.modmaker.gui.MainWindow;
 import haxe.ui.HaxeUIApp;
 
 class Main {

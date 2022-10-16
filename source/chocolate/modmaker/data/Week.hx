@@ -17,9 +17,11 @@
  */
 
 /*
- * Song.hx
+ * Week.hx
  * [Module Description]
  */
-package engima.modmaker.data;
+package chocolate.modmaker.data;
 
-class Song {}
+class Week{
+
+}

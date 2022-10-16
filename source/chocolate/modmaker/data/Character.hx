@@ -17,7 +17,18 @@
  */
 
 /*
- * Week.hx
- * [Module Description]
+ * Character.hx
+ * Manages rendering and animations of a character.
  */
-package engima.modmaker.data;
+package chocolate.modmaker.data;
+
+import funkin.ui.component.play.Character.CharacterData;
+import funkin.ui.component.play.Character;
+
+class Character {
+	var charData:CharacterData;
+
+	public function new() {
+		charData = new CharacterData();
+	}
+}

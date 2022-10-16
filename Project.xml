@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 		
-  <app title="Enigma Mod Maker" file="Enigma" packageName="com.mastereric.enigmaengine" package="com.mastereric.enigmaengine" main="Main" version="0.1.0" company="mastereric" />
+  <app title="Chocolate Mod Maker" file="Choco" packageName="com.joalor64gh.chocolateengine" package="com.joalor64gh.chocolateengine" main="Main" version="0.6.9" company="Joalor64GH" />
   
   <!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
